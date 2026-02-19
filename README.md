@@ -2,22 +2,20 @@
 
 Elimina el registro manual de gastos. **Gasto Cero Esfuerzo.**
 
-FinScan es una aplicación móvil que solicita acceso de lectura a Gmail, busca comprobantes de bancos y utiliza un LLM para extraer montos y categorías, presentándolos en un dashboard mensual.
+FinScan es una aplicación móvil (React Native + Expo) que solicita acceso de lectura a Gmail, busca comprobantes de bancos y utiliza un LLM (Gemini 1.5 Flash) para extraer montos y categorías, presentándolos en un dashboard mensual automatizado.
 
-## 🚀 Stack Tecnológico
-- **Frontend:** React Native + Expo
-- **Auth:** Google OAuth 2.0 (Scopes: `gmail.readonly`, `userinfo.email`)
-- **Backend:** Firebase Functions (Node.js)
-- **IA:** Gemini 1.5 Flash API
-- **Base de Datos:** Cloud Firestore (NoSQL)
+## 📂 Documentación del Proyecto
+Hemos organizado toda la visión y técnica del producto en la carpeta `/docs`:
 
-## 🛠 Arquitectura del Sistema
-1. **Login:** Google OAuth 2.0.
-2. **Fetch:** API de Gmail (filtros bancarios).
-3. **Extract:** Gemini 1.5 Flash procesa el HTML/Texto a JSON.
-4. **Store:** Persistencia en Firestore.
+- [🏗 **Arquitectura y Flujo de Datos**](docs/ARCHITECTURE.md): Stack tecnológico y pipeline de información.
+- [🧠 **Sistema de IA**](docs/AI_SYSTEM.md): Especificación del Prompt y extracción de datos.
+- [🔐 **Flujo de Auth**](docs/AUTH_FLOW.md): Explicación del sistema OAuth 2.0 y seguridad.
+- [📈 **Hoja de Ruta**](docs/ROADMAP.md): Seguimiento de avance por Sets.
 
-## 📈 Hoja de Ruta
-- [ ] **SET 1: EL MOTOR** (Auth, Login, Gmail API Test)
-- [ ] **SET 2: EL CEREBRO** (Backend, Gemini Integration, Firestore)
-- [ ] **SET 3: LA INTERFAZ** (Dashboard, Alertas)
+## 🚀 Inicio Rápido (Desarrollo)
+1. Clona el repo.
+2. `cd mobile && npm install` para el frontend.
+3. `cd functions && npm install` para el backend.
+
+---
+*Diseñado por Yonni & Eurekka 🧙‍♂️*
