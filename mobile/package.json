@@ -15,7 +15,9 @@
     "react-native": "0.74.1",
     "expo-auth-session": "~5.5.2",
     "expo-crypto": "~13.0.2",
-    "expo-web-browser": "~13.0.3"
+    "expo-web-browser": "~13.0.3",
+    "lucide-react-native": "^0.378.0",
+    "react-native-svg": "15.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
